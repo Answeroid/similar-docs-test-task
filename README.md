@@ -5,13 +5,13 @@ executed via SBT task.
 Criterias for similiarity should be defined by yourself, but those should be well documented. Documents also
 should be prepared by yourself.
 
-#Description
+## Description
 Test program compares 2 docs using Levenstein alg https://en.wikipedia.org/wiki/Levenshtein_distance
 Implementation was used from Java nad can be rewritten to Scala if needed.
 
 Long story short - Levenshtein distance between two Strings is the minimum number of single-character edits (insertions, deletions or substitutions) required to change one word into the other.
 
-#Subtasks to do
+## TODO
 - delete all punctuation marks inside of the docs before comparing them
 - compared docs moved to lowercase before comparing them
 - loop to compare all docs but not hardcoded 2 docs as it done now
