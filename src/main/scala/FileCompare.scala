@@ -57,7 +57,7 @@ object FileCompare {
 
             // collect only first 3 closest files
             val closestMap = result.take(3)
-            println("-----Closest 3 files-----")
+            println("-----Closest 3 pairs-----")
             closestMap.keys.foreach{key =>
                 println("Key = " + key)
                 println("Value = " + result(key))
