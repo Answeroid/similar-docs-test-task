@@ -23,6 +23,6 @@ Long story short - Levenshtein distance between two Strings is the minimum numbe
 ## TODO
 - delete all punctuation marks inside of the docs before comparing them (DONE)
 - compared docs moved to lowercase before comparing them (DONE)
-- add exception handling if file/folder not found
-- loop to compare all docs but not hardcoded 2 docs as it done now
+- add exception handling if file/folder not found (DONE)
+- loop to compare all docs but not hardcoded 2 docs as it done now (DONE)
 - an ability compare 2 docs using simplest search to have number of 1st doc word occurrences in 2nd doc
