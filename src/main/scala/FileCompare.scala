@@ -13,8 +13,6 @@ object FileCompare {
     def main(args: Array[String]): Unit = {
 
         val dir = new File(System.getProperty("user.dir") + "/testfiles/")
-        println("____________________________")
-        println(System.getProperty("user.dir"))
         var stringsList = ListBuffer.empty[String]
         val compareStrings = new Levenshtein
 
