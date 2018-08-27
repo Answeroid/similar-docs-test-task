@@ -5,6 +5,15 @@ executed via SBT task.
 Criterias for similiarity should be defined by yourself, but those should be well documented. Documents also
 should be prepared by yourself.
 
+## HOWTO
+To use it please do the following:
+ - install Scala and SBT (please note that for each OS installation instructions will be different)
+ - git clone it to proper folder (git clone https://github.com/Answeroid/similar-docs-test-task.git)
+ - cd to cloned repo
+ - start demo run using "sbt run" command
+
+If you want to try it with your personal files - place all of them into "testfiles" directlory and start script again.
+
 ## Description
 Test program compares 2 docs using Levenstein alg https://en.wikipedia.org/wiki/Levenshtein_distance
 Implementation was used from Java nad can be rewritten to Scala if needed.
@@ -14,5 +23,6 @@ Long story short - Levenshtein distance between two Strings is the minimum numbe
 ## TODO
 - delete all punctuation marks inside of the docs before comparing them (DONE)
 - compared docs moved to lowercase before comparing them (DONE)
+- add exception handling if file/folder not found
 - loop to compare all docs but not hardcoded 2 docs as it done now
 - an ability compare 2 docs using simplest search to have number of 1st doc word occurrences in 2nd doc
