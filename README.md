@@ -28,3 +28,26 @@ Long story short - Levenshtein distance between two Strings is the minimum numbe
 - add break to avoid same doc comparison (DONE)
 - print file names based on closest files (DONE)
 - an ability compare 2 docs using simplest search to have number of 1st doc word occurrences in 2nd doc
+
+## OUTPUT EXAMPLE
+```
+-----Closest 3 files-----
+Key = 48
+Value = List(baa baa black sheepyes sir yes sirthree bags fullone for the masterwho lives down the lanebaa baa black sheephave you any woolthree bags full, baa baa black sheephave you any wooland one for the little boywho lives down the lanebaa baa black sheephave you any woolyes sir yes sirthree bags full)
+Key = 64
+Value = List(baa baa black sheephave you any wooland one for the little boywho lives down the lanebaa baa black sheephave you any woolyes sir yes sirthree bags full, baa baa black sheephave you any woolyes sir yes sirthree bags fullone for the masterone for the dameand one for the little boywho lives down the lanebaa baa black sheephave you any woolyes sir yes sirthree bags full)
+Key = 66
+Value = List(baa baa black sheephave you any woolyes sir yes sirthree bags fullone for the masterone for the dameand one for the little boywho lives down the lane, baa baa black sheephave you any woolyes sir yes sirthree bags fullone for the masterone for the dameand one for the little boywho lives down the lanebaa baa black sheephave you any woolyes sir yes sirthree bags full)
+Those files are close to each other:
+...similar-docs-test-task/testfiles/test5
+...similar-docs-test-task/testfiles/test4
+Distance: 48
+Those files are close to each other:
+...similar-docs-test-task/testfiles/test4
+...similar-docs-test-task/testfiles/test1
+Distance: 64
+Those files are close to each other:
+...similar-docs-test-task/testfiles/test2
+...similar-docs-test-task/testfiles/test1
+Distance: 66
+```
