@@ -12,13 +12,16 @@ object FileCompare {
 
     def main(args: Array[String]): Unit = {
 
-        val dir = new File("/Users/vkhalin/IdeaProjects/similar-docs-test-task/src/main/scala/testfiles/")
+        val dir = new File(System.getProperty("user.dir") + "/testfiles/")
+        println("____________________________")
+        println(System.getProperty("user.dir"))
         var stringsList = ListBuffer.empty[String]
         val compareStrings = new Levenshtein
 
 
         for(file_ <- filesIterator(dir)) {
             var lines = Source.fromFile(file_).getLines.mkString
+                .toLowerCase.replaceAll("[^A-Za-z0-9 ]", "")
             stringsList += lines
         }
 
