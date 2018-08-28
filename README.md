@@ -27,6 +27,7 @@ Long story short - Levenshtein distance between two Strings is the minimum numbe
 - loop to compare all docs but not hardcoded 2 docs as it done now (DONE)
 - add break to avoid same doc comparison (DONE)
 - print file names based on closest files (DONE)
+- reformat code to be more 'functional' (DONE)
 - an ability compare 2 docs using simplest search to have number of 1st doc word occurrences in 2nd doc
 
 ## OUTPUT EXAMPLE
